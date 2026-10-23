@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-23T09:59:03.186Z",
+  "passed": [
+    "Guest blocked at admin",
+    "Guest blocked at dashboard",
+    "Wrong password rejected",
+    "Credentials user and typed role",
+    "Session cookie httpOnly / SameSite",
+    "User blocked at admin",
+    "Admin allowed",
+    "Direct action as user cannot mutate",
+    "Direct action as guest rejected",
+    "Server Action denies user independently of middleware",
+    "Admin action validates input",
+    "Admin delete action persists",
+    "Logout invalidates browser session",
+    "SEO in source /",
+    "SEO in source /products/1",
+    "Dynamic OG image"
+  ]
+}

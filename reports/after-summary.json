@@ -1,0 +1,22 @@
+[
+  {
+    "page": "/",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 96,
+    "seo": 100,
+    "LCP": 1830.2297000000003,
+    "CLS": 0,
+    "date": "2026-10-23T09:58:09.630Z"
+  },
+  {
+    "page": "/products/1",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "LCP": 934.6941999999999,
+    "CLS": 0,
+    "date": "2026-10-23T09:58:16.019Z"
+  }
+]

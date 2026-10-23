@@ -1,0 +1,5 @@
+import Link from 'next/link';
+import { siteUrl, products } from '@/lib/catalog';
+import { JsonLd } from '@/components/json-ld';
+export const metadata = process.env.SEO_BASELINE ? {} : {title:'Học lập trình qua thực hành',alternates:{canonical:'/'},openGraph:{title:'LearnSpace — Học lập trình qua thực hành',description:'Khám phá các khóa học React và Next.js.',url:'/',type:'website'}};
+export default function Home() { return <><JsonLd data={{'@context':'https://schema.org','@type':'Organization',name:'LearnSpace',url:siteUrl}}/><p className="eyebrow">LEARN. BUILD. GROW.</p><h1>Biến kiến thức<br/>thành sản phẩm.</h1><p className="lead">Học React và Next.js bằng những dự án thực tế. Từng bài học là một bước tiến tới ứng dụng của riêng bạn.</p><Link className="button" href="/products/1">Khám phá khóa học →</Link><section><p className="eyebrow">LỘ TRÌNH HỌC TẬP</p><h2>Bắt đầu từ điều bạn muốn xây dựng</h2><div className="grid">{products.map((p,i)=><article key={p.id}><span className="number">0{i+1}</span><h3><Link href={'/products/'+p.id}>{p.name}</Link></h3><p>{p.description}</p><strong>{p.price.toLocaleString('vi-VN')} ₫</strong></article>)}</div></section></>; }
